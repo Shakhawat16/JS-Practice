@@ -1,0 +1,10 @@
+const d=new Date();
+console.log(d);
+d.toDateString();
+console.log(d);
+d.toISOString();
+console.log(d);
+const dd=new Date(23-03-2292);
+console.log(dd);
+console.log(dd.getFullYear());
+console.log(dd.getDay());
