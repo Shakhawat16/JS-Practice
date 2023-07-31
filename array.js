@@ -51,5 +51,37 @@ hrr.splice(2,0,4,5);
 console.log(hrr);
 const prt=hrr.slice(2,4);
 console.log(prt);
+let sum = err.reduce((p,c)=> p+c , 0);
+console.log(sum);
+sum=err.reduce((p,c,idx,err)=>p-c, 39083);
+console.log(sum); 
+// spread
+var prr=[2,...err,3,4];
+console.log(prr); 
+// rest
+function msp(...prm){
+    console.log(prm);
+    console.log(prm[2]); 
+}
 
+msp(2,3,4,5);
+// array destructuring
+const [a,,b]=prr;
+console.log(a,b);
+// object destructuring
 
+var myobj={
+    a: "aa",
+    b: "bb",
+    // nobj: {
+    //     c: "cc"
+    // }
+
+}
+var {nobj:{c:nn}={}} = myobj;
+console.log(nn);
+// swap destructuring
+let z=3,y=5;
+console.log(z,y);
+[y,z]=[z,y];
+console.log(y,z);
