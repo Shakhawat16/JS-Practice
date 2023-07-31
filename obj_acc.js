@@ -11,3 +11,15 @@ Object.defineProperty(obj, "lan",
 
 console.log(obj.lan);
 
+function pp(f, l, a){
+    this.fn=f;
+    this.ln=l;
+    this.ag=a;
+    this.fln=function(){
+        return this.fn + " " +this.ln;
+    }
+}
+
+let i=new pp("shakhawat", "hosen" ,23);
+let he=new pp("a" , "b", 32);
+console.log(he.fln);
